@@ -1,0 +1,17 @@
+0: schedule P2
+10: terminate P2
+10: schedule P1
+40: schedule P1
+70: terminate P1
+70: schedule P3
+100: schedule P3
+110: terminate P3
+110: schedule P2
+130: terminate P2
+130: schedule P5
+160: schedule P5
+170: terminate P5
+170: schedule P6
+180: terminate P6
+180: schedule P4
+200: terminate P4

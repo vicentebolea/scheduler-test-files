@@ -1,0 +1,283 @@
+Rate Monotonic 
+
+The End Time is 200 ms which means -e 200.
+And the time unit is 1 ms. 
+ex)./scheduler -i input.txt -s RM -e 200
+
+-------------------------
+CASE 01:
+SUM of CPU utilizations = 0.750
+2 prcoesses.
+
+<input>
+1 50 20
+2 100 35
+
+
+<output>
+0: schedule  P1
+20: terminate  P1
+20: schedule  P2
+50: schedule  P1
+70: terminate  P1
+70: schedule  P2
+75: terminate  P2
+100: schedule  P1
+120: terminate  P1
+120: schedule  P2
+150: schedule  P1
+170: terminate  P1
+170: schedule  P2
+175: terminate  P2
+200: schedule  P1
+
+-------------------------
+CASE 02:
+SUM of CPU utilizations = 1.125
+2 prcoesses.
+
+<input>
+1 60 30
+2 80 50
+
+<output>
+0: schedule  P1
+30: terminate  P1
+30: schedule  P2
+60: schedule  P1
+Violate deadline of P2
+
+
+-------------------------
+CASE 03:
+SUM of CPU utilizations = 0.904
+2 prcoesses.
+
+<input>
+1 60 25
+2 80 39
+
+<output>
+0: schedule  P1
+25: terminate  P1
+25: schedule  P2
+60: schedule  P1
+Violate deadline of P2
+
+
+-------------------------
+CASE 04:
+SUM of CPU utilizations = 0.767
+7 prcoesses.
+
+<input>
+1 50 10
+2 110 15
+3 150 5
+4 30 5
+5 85 10
+6 100 5
+7 80 5
+
+<output>
+0: schedule  P4
+5: terminate  P4
+5: schedule  P1
+15: terminate  P1
+15: schedule  P7
+20: terminate  P7
+20: schedule  P5
+30: terminate  P5
+30: schedule  P4
+35: terminate  P4
+35: schedule  P6
+40: terminate  P6
+40: schedule  P2
+50: schedule  P1
+60: terminate  P1
+60: schedule  P4
+65: terminate  P4
+65: schedule  P2
+70: terminate  P2
+70: schedule  P3
+75: terminate  P3
+80: schedule  P7
+85: terminate  P7
+85: schedule  P5
+90: schedule  P4
+95: terminate  P4
+95: schedule  P5
+100: terminate  P5
+100: schedule  P1
+110: terminate  P1
+110: schedule  P6
+115: terminate  P6
+115: schedule  P2
+120: schedule  P4
+125: terminate  P4
+125: schedule  P2
+135: terminate  P2
+150: schedule  P4
+155: terminate  P4
+155: schedule  P1
+165: terminate  P1
+165: schedule  P7
+170: terminate  P7
+170: schedule  P5
+180: terminate  P5
+180: schedule  P4
+185: terminate  P4
+185: schedule  P3
+190: terminate  P3
+200: schedule  P1
+
+
+-------------------------
+CASE 05:
+SUM of CPU utilizations = 1.274
+7 prcoesses.
+
+<input>
+1 50 20
+2 110 25
+3 150 5
+4 30 10
+5 85 10
+6 100 10
+7 80 5
+
+<output>
+0: schedule  P4
+10: terminate  P4
+10: schedule  P1
+30: terminate  P1
+30: schedule  P4
+40: terminate  P4
+40: schedule  P7
+45: terminate  P7
+45: schedule  P5
+50: schedule  P1
+60: schedule  P4
+70: terminate  P4
+70: schedule  P1
+80: terminate  P1
+80: schedule  P7
+Violate deadline of P5
+
+
+-------------------------
+CASE 06:
+SUM of CPU utilizations = 0.980
+7 processes
+
+<input>
+1 50 16
+2 110 21
+3 150 5
+4 30 7
+5 85 4
+6 100 8
+7 80 6
+
+<output>
+0: schedule  P4
+7: terminate  P4
+7: schedule  P1
+23: terminate  P1
+23: schedule  P7
+29: terminate  P7
+29: schedule  P5
+30: schedule  P4
+37: terminate  P4
+37: schedule  P5
+40: terminate  P5
+40: schedule  P6
+48: terminate  P6
+48: schedule  P2
+50: schedule  P1
+60: schedule  P4
+67: terminate  P4
+67: schedule  P1
+73: terminate  P1
+73: schedule  P2
+80: schedule  P7
+86: terminate  P7
+86: schedule  P5
+90: terminate  P5
+90: schedule  P4
+97: terminate  P4
+97: schedule  P2
+100: schedule  P1
+Violate deadline of P2
+
+
+-------------------------
+CASE 07:
+SUM of CPU utilizations = 0.880
+7 processes
+
+<input>
+1 50 16
+2 110 10
+3 150 5
+4 30 7
+5 85 4
+6 100 8
+7 80 6
+
+<output>
+0: schedule  P4
+7: terminate  P4
+7: schedule  P1
+23: terminate  P1
+23: schedule  P7
+29: terminate  P7
+29: schedule  P5
+30: schedule  P4
+37: terminate  P4
+37: schedule  P5
+40: terminate  P5
+40: schedule  P6
+48: terminate  P6
+48: schedule  P2
+50: schedule  P1
+60: schedule  P4
+67: terminate  P4
+67: schedule  P1
+73: terminate  P1
+73: schedule  P2
+80: schedule  P7
+86: terminate  P7
+86: schedule  P5
+90: terminate  P5
+90: schedule  P4
+97: terminate  P4
+97: schedule  P2
+98: terminate  P2
+98: schedule  P3
+100: schedule  P1
+116: terminate  P1
+116: schedule  P6
+120: schedule  P4
+127: terminate  P4
+127: schedule  P6
+131: terminate  P6
+131: schedule  P2
+141: terminate  P2
+141: schedule  P3
+144: terminate  P3
+150: schedule  P4
+157: terminate  P4
+157: schedule  P1
+173: terminate  P1
+173: schedule  P7
+179: terminate  P7
+179: schedule  P5
+180: schedule  P4
+187: terminate  P4
+187: schedule  P5
+190: terminate  P5
+190: schedule  P3
+195: terminate  P3
+200: schedule  P1
+

@@ -1,0 +1,53 @@
+utilization : 0.9776
+
+5: schedule P1
+
+10: terminate P1
+
+11: schedule P2
+
+20: schedule P1
+
+25: terminate P1
+
+27: terminate P2
+
+28: schedule P3
+
+35: schedule P1
+
+40: terminate P1
+
+49: terminate P3
+
+50: schedule P1
+
+55: terminate P1
+
+56: schedule P2
+
+66: terminate P2
+
+67: schedule P1
+
+72: terminate P1
+
+73: schedule P4
+
+80: schedule P1
+
+85: terminate P1
+
+94: terminate P4
+
+95: schedule P2
+
+105: terminate P2
+
+106: schedule P1
+
+111: terminate P1
+
+112: schedule P3
+
+120: Violate deadline of P3

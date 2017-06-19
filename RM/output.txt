@@ -1,0 +1,11 @@
+0: schedule P6
+50: terminate P6
+50: schedule P3
+62: terminate P3
+62: schedule P5
+82: terminate P5
+82: schedule P2
+97: terminate P2
+97: schedule P4
+100: schedule P3
+110: Violate deadline of P4

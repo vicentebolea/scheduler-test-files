@@ -1,0 +1,324 @@
+utilization : 1.6395
+
+5: schedule P1
+
+10: terminate P1
+
+11: schedule P2
+
+13: terminate P2
+
+15: schedule P3
+
+20: schedule P4
+
+25: schedule P1
+
+30: terminate P1
+
+31: schedule P2
+
+33: terminate P2
+
+49: terminate P4
+
+50: schedule P2
+
+52: terminate P2
+
+53: schedule P1
+
+58: terminate P1
+
+59: schedule P2
+
+61: terminate P2
+
+65: schedule P1
+
+70: terminate P1
+
+71: schedule P2
+
+73: terminate P2
+
+74: terminate P3
+
+75: schedule P5
+
+85: schedule P1
+
+90: terminate P1
+
+91: schedule P2
+
+93: terminate P2
+
+97: terminate P5
+
+98: schedule P6
+
+100: schedule P2
+
+102: terminate P2
+
+105: schedule P1
+
+110: terminate P1
+
+122: terminate P6
+
+123: schedule P2
+
+125: terminate P2
+
+126: schedule P1
+
+131: terminate P1
+
+132: schedule P2
+
+134: terminate P2
+
+135: schedule P3
+
+143: terminate P3
+
+144: schedule P7
+
+145: schedule P1
+
+150: terminate P1
+
+151: schedule P2
+
+153: terminate P2
+
+160: schedule P2
+
+162: terminate P2
+
+165: schedule P1
+
+170: terminate P1
+
+175: schedule P2
+
+177: terminate P2
+
+183: terminate P7
+
+184: schedule P8
+
+185: schedule P1
+
+190: terminate P1
+
+191: schedule P2
+
+193: terminate P2
+
+205: schedule P1
+
+210: terminate P1
+
+211: schedule P2
+
+213: terminate P2
+
+219: terminate P8
+
+220: schedule P2
+
+222: terminate P2
+
+223: schedule P3
+
+225: schedule P1
+
+230: terminate P1
+
+235: schedule P2
+
+237: terminate P2
+
+240: terminate P3
+
+241: schedule P9
+
+245: schedule P1
+
+250: terminate P1
+
+269: terminate P9
+
+270: schedule P2
+
+272: terminate P2
+
+273: schedule P1
+
+278: terminate P1
+
+279: schedule P10
+
+284: terminate P10
+
+285: schedule P1
+
+290: terminate P1
+
+291: schedule P3
+
+299: terminate P3
+
+305: schedule P1
+
+310: terminate P1
+
+325: schedule P1
+
+330: terminate P1
+
+335: schedule P3
+
+343: terminate P3
+
+345: schedule P1
+
+350: terminate P1
+
+365: schedule P1
+
+370: terminate P1
+
+385: schedule P1
+
+390: terminate P1
+
+405: schedule P1
+
+410: terminate P1
+
+415: schedule P3
+
+423: terminate P3
+
+425: schedule P1
+
+430: terminate P1
+
+445: schedule P1
+
+450: terminate P1
+
+465: schedule P1
+
+470: terminate P1
+
+485: schedule P1
+
+490: terminate P1
+
+495: schedule P3
+
+503: terminate P3
+
+505: schedule P1
+
+510: terminate P1
+
+525: schedule P1
+
+530: terminate P1
+
+545: schedule P1
+
+550: terminate P1
+
+565: schedule P1
+
+570: terminate P1
+
+575: schedule P3
+
+583: terminate P3
+
+585: schedule P1
+
+590: terminate P1
+
+605: schedule P1
+
+610: terminate P1
+
+625: schedule P1
+
+630: terminate P1
+
+645: schedule P1
+
+650: terminate P1
+
+655: schedule P3
+
+663: terminate P3
+
+665: schedule P1
+
+670: terminate P1
+
+685: schedule P1
+
+690: terminate P1
+
+705: schedule P1
+
+710: terminate P1
+
+725: schedule P1
+
+730: terminate P1
+
+735: schedule P3
+
+743: terminate P3
+
+745: schedule P1
+
+750: terminate P1
+
+765: schedule P1
+
+770: terminate P1
+
+785: schedule P1
+
+790: terminate P1
+
+805: schedule P1
+
+810: terminate P1
+
+815: schedule P3
+
+823: terminate P3
+
+825: schedule P1
+
+830: terminate P1
+
+845: schedule P1
+
+850: terminate P1
+
+865: schedule P1
+
+870: terminate P1
+
+885: schedule P1
+
+890: terminate P1
+
+895: schedule P3
+

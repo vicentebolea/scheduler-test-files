@@ -1,0 +1,88 @@
+# INPUT q=30ms
+# -----
+#Proc id, arrival time, burst time, num tickets, resource type
+1 0 60 10 1
+2 0 10 20
+3 20 40 100 1 
+4 80 20 10 1 
+2 105 20 20 
+5 105 40 40 
+6 120 10 30 
+
+# OUTPUT
+# ------
+# At time 0:
+# total tickets = 30 
+# p1 tickets = 10; f = 10/30
+# p2 tickets = 20; f = 20/30
+# random num [0..30] = 15 -> schedule p2
+0: schedule P2
+10: terminate P2
+# p2 terminates in 10/30 next time it will have 3x its tickets
+
+# At time 10:
+# total tickets = 10 
+# p1 tickets = 10; f = 10/10
+# random num [0..10] = 5 -> schedule p1
+#! Hold resource 1
+10: schedule P1
+
+# At time 40
+# total tickets = 130 
+# p1 tickets = 10; f = 10/110
+# p3 tickets = 100; f = 100/110
+# random num [0..110] = 55 -> schedule p3
+#! P3 try to hold resource 1 but P1 is still holding resource 1
+#! Ticket transfer to P1
+# p1 tickets = 109; f = 109/110
+# p3 tickets = 1; f = 1/110
+40: schedule P1
+70: terminate P1
+
+# At time 70
+# total tickets = 100 
+# p3 tickets = 100; f = 100/100
+# random num [0..100] = 50 -> schedule p3
+#! P3 is holding resource 1
+70: schedule P3
+
+# At time 100
+# total tickets = 110 
+# p3 tickets = 100; f = 100/110
+# p4 tickets = 10; f = 10/110
+# random num [0..110] = 55 -> schedule p3
+100: schedule P3
+110: terminate P3
+
+#At time 110
+# total tickets = 110 
+# p2 tickets = 60; f = 60/110 // P2 tickets are more 3x more valuable now
+# p4 tickets = 10; f = 10/110
+# p5 tickets = 40; f = 40/110
+# random num [0..110] = 55 -> schedule p2
+110: schedule P2
+130: terminate P2
+
+#At time 130
+# total tickets = 110 
+# p4 tickets = 10; f = 10/80
+# p5 tickets = 40; f = 40/80
+# p6 tickets = 30; f = 30/80
+# random num [0..80] = 40 -> schedule p5
+130: schedule P5
+160: schedule P5
+170: terminate P5
+
+#At time 160
+# total tickets = 40
+# p4 tickets = 10; f = 10/40
+# p6 tickets = 30; f = 30/40
+# random num [0..40] = 20 -> schedule p6
+170: schedule P6
+180: terminate P6
+
+#At time 170
+# p4 only proccess
+#! Hold resource 1
+180: schedule P4
+200: terminate P4
